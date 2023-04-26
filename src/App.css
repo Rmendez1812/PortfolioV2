@@ -1,0 +1,171 @@
+:root {
+    --white: #fafafa;
+    --dark: #000029;
+    --cardbody: #4361ee;
+    --cartext: #fff;
+  }
+  
+  h1, h2, h3, a {
+    font-family: 'Roboto', cursive;
+  }
+  
+  p {
+    color: #fff;
+  }
+  
+  h1, h2 {
+    color: var(--white);
+  }
+  
+  h3 {
+    color: var(--white)
+  }
+  
+  a:link {
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--white);
+  }
+  
+  a:hover {
+    color: var(--white);
+  }
+  
+  a:active {
+    color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .proj-btn {
+    background-color: var(--dark);
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .resume-btn {
+    background-color: var(--cardbody);
+    border-radius: 5px;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    color: var(--cyan)
+  }
+  
+  .header {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    opacity: .75;
+  }
+  
+  .nav {
+    font-size: 1.25rem;
+  }
+  
+  .page-container, .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem 0 5rem 0;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--dark);
+    opacity: .75;
+  }
+  
+  .headshot {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+  }
+  
+  .greeting {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 2rem 0;
+  }
+  
+  .form-width {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form {
+    margin-top: 2rem;
+  }
+  
+  .card-title {
+    height: 75px;
+    text-align: center;
+  }
+  
+  .card-text {
+    height: 125px;
+    color: var(--cartext);
+  }
+  
+  .card-body {
+    background-image: linear-gradient( to bottom, var(--dark), #1c6ee9);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .page-container {
+      padding: 1rem;
+      margin: 5rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .page-container {
+      margin: 1rem 1rem 5rem 1rem;
+    }
+    .header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
